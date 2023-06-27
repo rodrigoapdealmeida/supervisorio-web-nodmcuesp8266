@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisorio Industrial</title>
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="logo">
+                <span class="image">
+                    <img src="images/Logotipo.png" alt="Logotipo">
+                </span>
+                <div class="text header-text">
+                    <span class="name-logo">DASHBOARD</span>
+                    <span class="name">Supervisorio Industrial</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Rendimentos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt icon'></i>
+                            <span class="text nav-text">Análise</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Favoritos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="dashboard">
+        <header class="header-bar">
+            <div class="main-header">
+                <li class="nav-link"><i class='bx bx-search icon'></i>
+                <input type="pesquisar" placeholder="Pesquisar...">
+                </li>
+                <ul class="nav-header">
+                    <li class="li-icon"><a href="#"></a></li>
+                    <li class="li-icon"><a href="#"></a><i class='bx bxs-bell icon'></i></li>
+                    <li class="li-icon"><a href="#"></a><i class='bx bxs-grid icon'></i></li>
+                    <li class="li-user" onclick="toggleMenu()"><a href="#"></a> <div class="user"> 
+                        <p>Olá, Rodrigo Almeida</p> 
+                        <i class='bx bxs-user-circle icon'></i></div> 
+                        
+                    </li>
+                </ul>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <i class='bx bxs-user-circle icon'></i>
+                            <h2>Rodrigo Almeida</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bxs-user'></i>
+                            <p>Editar Perfil</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bxs-cog'></i>
+                            <p>Configurações e privacidade</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bxs-help-circle'></i>
+                            <p>Ajuda e Suporte</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-log-out icon'></i>
+                            <p>Sair</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-bar">
+            <div class="main-itens">
+                <div class="card">
+                    <div class="title">
+                        <h2>Temperatura</h2>
+                        <div class="info-machine">
+                            <h4>Maq: 033</h4>
+                            <i class='bx bxs-x-circle icon'></i>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <img src="images/termometro.png" alt="">
+                        <h1>220°C</h1>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title">
+                        <h2>Pressão</h2>
+                        <div class="info-machine">
+                            <h4>Maq: 033</h4>
+                            <i class='bx bxs-x-circle icon'></i>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <img src="images/medidor-de-pressao.png" alt="">
+                        <h1>150bar</h1>
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
